@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Khronos/Khronos.vcxproj" Id="f281a444-0e1a-40fb-a89e-f6f70da5dcb2" />
+</Solution>
