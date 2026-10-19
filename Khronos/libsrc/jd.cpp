@@ -26,7 +26,7 @@ using namespace khronos;
 				minute_t(tmNow.tm_min), 
 				second_t(tmNow.tm_sec)
 			); 
-		else 
+		else if(t == NOTIMEOFDAY)
 			jd_ = gregorian_to_jd(
 				year_t(tmNow.tm_year) + 1900,
 				month_t(tmNow.tm_mon) + 1,
@@ -40,7 +40,7 @@ using namespace khronos;
 	std::string Jd::to_string() const {
 		std::ostringstream oss;
 
-		oss << jd_; 
+		oss << "JD " << jd_;
 		return oss.str();
 	}
 

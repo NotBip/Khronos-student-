@@ -39,6 +39,7 @@ namespace khronos {
 			return day + (153 * m + 2) / 5 + 365 * y + y / 4 - y / 100 + y / 400 - 32045 - 0.5;
 		}
 	};
+
 	jd_t gregorian_to_jd(year_t year, month_t month, day_t day) {
 		assert(year > -4800 && "Minimum year is 4800 BCE");
 		assert(month >= 1 && "Minimum month is January = 1");
@@ -52,6 +53,8 @@ namespace khronos {
 	jd_t gregorian_to_jd(year_t year, month_t month, day_t day, hour_t hour, minute_t minute, second_t seconds) {
 		return (gregorian_to_jd(year, month, day) + tod(hour, minute, seconds));
 	}
+
+
 };
 
 

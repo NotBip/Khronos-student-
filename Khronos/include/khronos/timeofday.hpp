@@ -58,4 +58,6 @@ namespace khronos {
 		minutes = static_cast<minute_t> (seconds_in_a_day / 60) % 60;
 	}
 
+
+
 } // end-of-namespace khronos
